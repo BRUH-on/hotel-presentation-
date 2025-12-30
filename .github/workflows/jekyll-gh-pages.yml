@@ -33,10 +33,13 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./Hotel_Project/
+          source: ./hotel-presentation-/Hotel_Project
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+      - name: ls
+            ls
+            pwd
 
   # Deployment job
   deploy:
